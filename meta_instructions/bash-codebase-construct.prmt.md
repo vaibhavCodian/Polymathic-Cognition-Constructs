@@ -40,7 +40,6 @@ The generated Bash script must meticulously construct a complete software projec
 6.  **Bash Script Technical Requirements:**
     *   The script MUST begin with `#!/bin/bash`.
     *   Utilize `mkdir -p "/path/to/directory"` to create directories, ensuring parent directories are created and to prevent errors if directories already exist. Paths should be quoted.
-    *   Employ heredocs (`cat << 'EOF' > "/path/to/filepath/filename.ext" ... EOF`) for creating files with multi-line content. **Crucially, the `EOF` marker for heredocs MUST be quoted (e.g., `'EOF'`)** to prevent any variable expansion or command substitution by the shell within the content being written to files, ensuring verbatim fidelity of the generated code/text.
     *   The script must be self-contained and runnable without external dependencies or modifications (beyond execution permissions).
     *   All file and directory paths within the script should be relative to the directory where the Bash script itself is intended to be run (i.e., the root project directory will be created in the current working directory upon script execution).
     *   Comment the Bash script judiciously. Light comments can indicate which part of THE CONTEXT inspired a particular directory, file, or complex content block, aiding traceability and understanding.
