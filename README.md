@@ -1,2 +1,2 @@
 # Polymathic-Cognition-Constructs
-A curated repository of Polymathic Cognition Constructs – intelligent prompts and structured directives for AI, designed to accelerate development across Go, Cloud, DevOps, and more. Features a Python CLI for easy prompt generation and management.
+A centralized and highly organized collection of sophisticated AI prompts engineered to unlock advanced capabilities across a wide spectrum of disciplines. This repository is built to provide quick access to powerful constructs for diverse tasks, facilitating efficient and expert-level AI interactions for developers, engineers, strategists, and innovators.
