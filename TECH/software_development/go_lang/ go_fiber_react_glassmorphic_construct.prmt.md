@@ -83,6 +83,13 @@ You are tasked with architecting and implementing a complete application featuri
     * Maintain a clean folder structure: `handlers/`, `models/`, `routes/`, `services/`, `config/`, etc.
     * Pin all third-party dependencies with exact versions in `go.mod`.
     * Implement a `/healthz` or `/ping` route for uptime checks.
+    * go.sum Generation Directive:
+        * You must never write, edit, or manually construct the go.sum file.
+        * The go.sum file must be automatically generated and maintained by the Go toolchain.
+        * Use standard Go commands such as go build, go test, or go mod tidy to generate go.sum after dependencies are added to go.mod.
+        * Ensure the presence of a valid and complete go.sum file in every Go module to support reproducible builds.
+        * If go.sum is missing, incomplete, or inconsistent with go.mod, include steps to fix it using go mod tidy.
+-----------------------------------------------------------------------------------------------------------------------------------------        
     * Ensure a valid go.mod file is initialized for all Go projects using go mod init <module-name>. Use myapp or similarly generic local-friendly names (avoid GitHub-based module names).
     * Automatically generate and maintain go.sum via go build, go test, or go mod tidy. Do not handwrite it.
     * Pin dependencies explicitly by version in go.mod (avoid indirect or wildcard versions).
