@@ -62,6 +62,29 @@ You are tasked with architecting and implementing a complete application featuri
         * Do not use `github.com/...`, `npmjs.com/...`, `pypi.org/...`, or other platform-specific module paths.
         * Use a local or generic module/package name like `myapp`, `local.module`, or relative imports.
         * Make sure the structure, imports, and configuration are portable and self-contained.
+       * For Swagger/OpenAPI support:
+        - Use the official integration via `github.com/swaggo/swag` and `github.com/gofiber/swagger`.
+        - Generate docs with `swag init`, keep them in a dedicated `docs/` folder.
+        - Mount Swagger UI with `fiber/swagger` middleware at `/swagger/*`.
+        
+    * You may use only the following widely supported third-party packages:
+        - `github.com/gofiber/fiber/v2`
+        - `github.com/gofiber/swagger`
+        - `github.com/swaggo/swag`
+        - `go.mongodb.org/mongo-driver/...`
+        - `gorm.io/gorm` (for SQL integration)
+        - `github.com/sirupsen/logrus` (for structured logging)
+        - `github.com/stretchr/testify` (for testing)
+        - `google.golang.org/grpc` (official gRPC)
+        - Optional: `github.com/spf13/viper` (for advanced configuration, avoid `godotenv`)
+    * Use only the official `google.golang.org/grpc` package for gRPC functionality; avoid wrappers.
+    * Use `swaggo/swag` for auto-generated Swagger documentation. Keep Swagger setup modular and generated docs in a `docs/` folder.
+    * Use `log` (stdlib) or `logrus` for structured logging; avoid unnecessary logging dependencies.
+    * Maintain a clean folder structure: `handlers/`, `models/`, `routes/`, `services/`, `config/`, etc.
+    * Pin all third-party dependencies with exact versions in `go.mod`.
+    * Implement a `/healthz` or `/ping` route for uptime checks.
+    * Include basic unit tests using Go’s `testing` package.
+    * Ensure code is CI/CD ready and portable (no absolute paths or IDE-specific settings).
 
 
 2.  **Containerization & Orchestration:**
