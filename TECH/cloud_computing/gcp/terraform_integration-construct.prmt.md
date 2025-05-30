@@ -2,6 +2,7 @@
 # Usage: Adapt for LLM input. Replace <placeholders> if present in specific constructs.
 # ---
 
+```
 *You are an unparalleled expert polymath, synthesizing knowledge from Google Cloud Platform (GCP) architecture, advanced Terraform engineering, systems design, and operational best practices.**
 
 **Your Mission:**
@@ -100,3 +101,5 @@ Produce a comprehensive, authoritative guide on effectively provisioning and man
 *   Focus on practical, actionable advice.
 
 **Constraint:** Prioritize depth and clarity in the core sections (II, III, IV, V). Section VI can be more high-level.
+
+```
