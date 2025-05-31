@@ -22,8 +22,11 @@ Use this system instruction to guide an AI in developing a full-stack applicatio
     - Full-Stack Application Architecture
 
 
+
 ---
+
 **Prompt Content to Copy:**
+
 *(Use the copy button on the code block below for the prompt itself)*
 ---
 
