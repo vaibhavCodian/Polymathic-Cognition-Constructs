@@ -1,10 +1,10 @@
 # Description:
 
-    Advanced Go (Fiber) & React-Redux full-stack development. Covers REST APIs (Swagger), gRPC, databases (MongoDB, MySQL), Docker, cloud deployment (Cloud Run, GKE), and a Glassmorphic dark-themed UI.
+Advanced Go (Fiber) & React-Redux full-stack development. Covers REST APIs (Swagger), gRPC, databases (MongoDB, MySQL), Docker, cloud deployment (Cloud Run, GKE), and a Glassmorphic dark-themed UI.
 
 # Usage:
     
-    Use this system instruction to guide an AI in developing a full-stack application with a Go (Fiber) backend and a React-Redux frontend adhering to specific UI/UX principles.
+Use this system instruction to guide an AI in developing a full-stack application with a Go (Fiber) backend and a React-Redux frontend adhering to specific UI/UX principles.
 
 # Key Focus Areas:
 
