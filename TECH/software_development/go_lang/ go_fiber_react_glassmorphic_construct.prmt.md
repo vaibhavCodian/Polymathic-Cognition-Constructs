@@ -1,10 +1,3 @@
-TO-Update;
-    Frontend:
-        - Always use Vite and Latest Build Technologies;
-        - add not to generate: node_modules and package.json.lock
-        
-
-
 # Description:
 
 Advanced Go (Fiber) & React-Redux full-stack development. Covers REST APIs (Swagger), gRPC, databases (MongoDB, MySQL), Docker, cloud deployment (Cloud Run, GKE), and a Glassmorphic dark-themed UI.
