@@ -949,7 +949,25 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
       
-    
+    - name: Run tests
+      run: |
+        docker build --target test -t app:test .
+        docker run --rm app:test npm test
+
+  security-scan:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+        
     - name: Upload Trivy scan results
       uses: github/codeql-action/upload-sarif@v2
       with:
